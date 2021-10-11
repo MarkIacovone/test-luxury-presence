@@ -6,6 +6,7 @@
 
 body {
     background-color: #f4f8f9;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -18,11 +19,16 @@ h1 {
 
 h2, h3 {
     font-family: 'Suranna', serif;
-    color: #b98b00;
 }
 
 h2 {
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+h3 {
+    color: #b98b00;
 }
 
 a {
@@ -81,16 +87,17 @@ p {
 
 .navbar {
     position: fixed;
-    width: 100%;
-    height: 6em;
     display: flex;
+    width: 100%;
+    height: 6.7em;
+    z-index: 5;
 }
 
 .a-ctn {
+    display: flex;
     width: 70%;
     height: 100%;
-    display: flex;
-    background-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF00);
+    background-image: linear-gradient(to bottom, #FFFFFF 30%, #FFFFFFF1 50%, #FFFFFF50 80%, #FFFFFF00 100%);
 }
 
 .navbar ol {
@@ -105,7 +112,7 @@ p {
 .logo-ctn {
     width: 30%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #7fcded, #7fcded00);
+    background-image: linear-gradient(to bottom, #7fcded, #7fcdedd1 50%, #7fcded50 80%, #7fcded00);
     background-size: 100%;
 }
 
@@ -485,4 +492,70 @@ footer p {
 footer .separator-lines {
     height: 100%;
     justify-content: center;
+}
+
+/* MEDIA QUERIES - SMALL */
+
+@media (max-width: 576px) {  
+
+    h1 {
+        font-size: 1em;
+        line-height: 2em;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 1em;
+        line-height: 0.2em;
+        color: red;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.2em;
+        word-spacing: 0.1em;
+    }
+
+    .a-ctn {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo-ctn {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ol {
+        flex-direction: column;
+        justify-content:start;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+
+    .floating-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .floating-box h2 {
+        height: 50%;
+        width: 80%;
+        line-height: 2em;
+        padding-top: 2em;
+        border: red solid 1px;
+    }
+
+
+
+
+
+
 }
