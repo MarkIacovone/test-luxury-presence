@@ -8,13 +8,30 @@ body {
     background-color: #f4f8f9;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+h1 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 2em;
+    text-transform: uppercase;
 }
 
-h3 {
+h2, h3 {
+    font-family: 'Suranna', serif;
     color: #b98b00;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+a {
+    font-family: 'Antic Didone';
+    font-size: 0.8em;
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: 0.08em;
 }
 
 p {
@@ -38,8 +55,8 @@ p {
     height: 90%;
     min-width: 90%;
     min-height: 90%;
-    mask-image: url(/media/article-6-mask.png);
-    -webkit-mask-image: url(/media/article-6-mask.png);
+    mask-image: url(../media/article-6-mask.png);
+    -webkit-mask-image: url(../media/article-6-mask.png);
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     mask-position: center;
@@ -58,12 +75,12 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(#FFFFFF00, #FFFFFF);
+    background-image: radial-gradient(#FFFFFF00 0%, #FFFFFF50 20%, #FFFFFF 80%);
     background-size: cover;
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 6em;
     display: flex;
@@ -95,7 +112,7 @@ p {
 .logo {
     width: 100%;
     height: 100%;
-    background: url(/media/gatiensalaun-logo.png) no-repeat;
+    background: url(../media/gatiensalaun-logo.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
@@ -110,19 +127,21 @@ p {
 }
 
 .header-title-ctn * {
-    padding: 0 0.1em 0 0.1em;
+    padding: 0 0.3em 0 0.3em;
 }
 
 
 .header-title {
     display: flex;
     align-items: center;
+    z-index: 1;
+
 }
 
 .header-title h1:nth-child(3) {
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 81px;
     color: #b98b00;
     border: 5px #000 solid;
     margin-left: -0.1em;
@@ -142,7 +161,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/media/floating-box-bg.png);
+    background-image: url(../media/floating-box-bg.png);
     background-repeat: no-repeat;
     background-size: 75%;
     background-position-x: center;
@@ -206,7 +225,7 @@ p {
 .article-1-bottom-bg {
     width: 100%;
     height: 20em;
-    background-image: url(/media/article-1-bottom-bg.png);
+    background-image: url(../media/article-1-bottom-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.2;
@@ -236,7 +255,7 @@ p {
 .article-title-bg {
     width: 100%;
     height: 100%;
-    background-image: url(/media/article-title-bg.png);
+    background-image: url(../media/article-title-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.2;
@@ -261,20 +280,20 @@ p {
 .flag-img {  
     float: right;
     /* border: firebrick 1px solid; */
-    shape-outside: url(/media/article-flag-1.png);
+    shape-outside: url(../media/article-flag-1.png);
     shape-margin: 3em;
     
     width: 50em;
   }
 
 .section-3 .article-title-ctn .article-title-bg {
-    background-image: url(/media/article-title-bg-2.png);
+    background-image: url(../media/article-title-bg-2.png);
 }
 
 .section-3 .article-3 .flag-img {
   float: left;
   margin-right: 2em;
-  shape-outside: url(/media/article-flag-2.png);
+  shape-outside: url(../media/article-flag-2.png);
   width: 40em;
 }
 
@@ -291,13 +310,13 @@ p {
 }
 
 .section-4 .article-title-ctn .article-title-bg {
-    background-image: url(./../media/article-title-bg-3.png);
+    background-image: url(../media/article-title-bg-3.png);
 }
 
 .section-4 .article-4 .flag-img {
     float: left;
     margin-right: 2em;
-    shape-outside: url(./../media/article-flag-3.png);
+    shape-outside: url(../media/article-flag-3.png);
 }
 
 .section-4 .article-4 .article-ctn p {
@@ -319,7 +338,7 @@ p {
 }
 
 .section-5 .article-title-ctn .article-title-bg {
-    background-image: url(/../media/article-title-bg-4.png);
+    background-image: url(../media/article-title-bg-4.png);
 }
 
 .section-5 .article-5 .flag-img {
@@ -444,7 +463,7 @@ footer {
 }
 
 .footer-bg-keys {
-    background-image: url(/media/footer-img.png);
+    background-image: url(../media/footer-img.png);
     background-size: cover;
     background-position: center;
     width: 100%;
