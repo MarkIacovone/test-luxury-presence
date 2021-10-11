@@ -291,13 +291,13 @@ p {
 }
 
 .section-4 .article-title-ctn .article-title-bg {
-    background-image: url(/media/article-title-bg-3.png);
+    background-image: url(./../media/article-title-bg-3.png);
 }
 
 .section-4 .article-4 .flag-img {
     float: left;
     margin-right: 2em;
-    shape-outside: url(/media/article-flag-3.png);
+    shape-outside: url(./../media/article-flag-3.png);
 }
 
 .section-4 .article-4 .article-ctn p {
