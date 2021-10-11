@@ -23,8 +23,14 @@
             <div class="logo-ctn">
                 <div class="logo"></div>
             </div>
-            <div class="a-ctn">
-                <ol>
+            <button id="nav-toggle-btn" class="nav-btn-ctn">                
+                <svg id="svgLine" xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 100 30">
+                    <path d="M 0 0 L 50 30" stroke="black" stroke-width="3"/>
+                    <path d="M 100 0 L 50 30" stroke="black" stroke-width="3"/>
+                </svg>
+            </button>
+            <div id="linkCtn" class="a-ctn">
+                <ol id="navList" class="nav-list">
                     <li><a href="#advertising">Advertising</a></li>
                     <li><a href="#contentProduction">Content Production</a></li>
                     <li><a href="#seo">SEO</a></li>
@@ -32,15 +38,17 @@
                     <li><a href="#propertyExperience">Immersive Experience</a></li>
                     <li><a href="#network">Network</a></li>
                 </ol>
+                
             </div>
+        
         </nav>
 
         <div class="header-title-ctn">
             <div class="header-title">
-                <h1>​​The Benefits of Working</h1>
+                <h1>​​The Benefits of Working</h1><h1 class="hidden-title">The Benefits of <br>Working with a</h1>
             </div>
             <div class="header-title">
-                <h1>with a </h1><img class="" src="media/luxury-presence-logo.png" alt="Luxury Presence"><h1>Agent</h1>
+                <h1>with a </h1><img class="" src="media/luxury-presence-logo.png" alt="Luxury Presence Logo"><h1>Agent</h1>
             </div>
         </div>
 <!-- 
@@ -290,8 +298,6 @@
 
     </footer>
 
-
-
-    
+    <script src="js/script.js" />
     </body>
 </html>
