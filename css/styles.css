@@ -261,7 +261,7 @@ p {
     background-image: url(../media/article-1-bottom-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.8;
 }
 
 .flag-section {
@@ -433,12 +433,6 @@ p {
     padding: 0 2em 0 2em;
 }
 
-.section-7 .article-7 img {
-    width: 100%;
-    margin: 0;
-    opacity: 0.2;
-}
-
 .section-7 article p {
     width: 100%;
     padding: 0 3em 3em 3em;
@@ -497,12 +491,12 @@ p {
     z-index: 1;
 }
 
-.article-7 img {
+.section-7 .article-7 img {
     width: 40%;
     height: 85%;
     margin: 0 2em 0 3em;
     object-fit: cover;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: 1;
 }
 
@@ -806,12 +800,19 @@ footer .separator-lines {
         height: 140vh;
     }
 
+    .section-7 .article-title-ctn h3 {
+        margin: 0 2em 0 2em;
+    }
+
     .section-7 .article-7 p {
         padding: 3em 2em 3em 2em;
     }
 
     .section-7 .article-7 img {
         position: absolute;
+        margin: 0;
+        width: 100%;
+        opacity: 0.2;
     }
 
 }
