@@ -41,7 +41,7 @@ a {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5em;
     word-spacing: 0.1em;
 }
@@ -273,6 +273,7 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 30%;
 }
@@ -280,8 +281,9 @@ p {
 .article-title-ctn h3 {
     position: absolute;
     display: flex;
+    text-align: center;
     align-items: center;
-    height: 100%;
+    border-bottom: 2px solid #b98b00;
     z-index: 1;
 }
 
@@ -359,6 +361,8 @@ p {
 
 .section-5 article {
     height: 70%;
+    padding: 0;
+    margin: 2em 0 2em 0;
 }
 
 .section-5 .article-5 .article-ctn {
@@ -404,6 +408,40 @@ p {
 
 .article-6 .article-ctn {
     height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*
+
+////////////////////////////////////
+
+
+
+*/
+.section-7 {
+    height: 100vh;
+}
+
+.section-7 .article-7 {
+    padding: 0 2em 0 2em;
+}
+
+.section-7 .article-7 img {
+    width: 100%;
+    margin: 0;
+    opacity: 0.2;
+}
+
+.section-7 article p {
+    width: 100%;
+    padding: 0 3em 3em 3em;
 }
 
 .left-mask,
@@ -527,16 +565,17 @@ footer .separator-lines {
 
     #articleVideoBg {
         width: 100%;
-        height: 80em;
         mask-image: linear-gradient(to bottom, #f4f8f900 30%, #f4f8f9 70%, #f4f8f900 100%);
         -webkit-mask-image: linear-gradient(to bottom, #f4f8f900 30%, #f4f8f9 70%, #f4f8f900 100%);
         object-fit: cover;
         object-position: bottom;
+        opacity: 0.5;
     }
 
     .logo-ctn {
         width: 100%;
         height: 7em;
+        background-image: linear-gradient(to bottom, #7fcded 39%, #7fcdedd1 70%, #7fcded50 90%, #7fcded00);
     }
 
     .logo {
@@ -634,19 +673,21 @@ footer .separator-lines {
 
     .header-title h1:nth-child(3) {
         width: 217px;
+        height: 2.5em;
         margin-left: 0;
-        margin-top: -0.1em;
+        margin-top: -0.2em;
     }
 
     .hidden-title {
         display: block;
     }
 
-    .floating-box-ctn {
+    .section-1 .floating-box-ctn {
+        position: absolute;
         height: 20em;
-        background-size: 100%;
-        background-position-y: 3em;
-        margin: -5em 0 0 0;
+        background-size: cover;
+        background-position-y: -3em;
+        margin: -2em 0 0 0;
 
     }
 
@@ -660,23 +701,91 @@ footer .separator-lines {
     .floating-box h2 {
         height: 100%;
         width: 80%;
-        border: red solid 1px;
     }
 
     .separator-lines {
         height: 3em;
     }
 
-    .article-1 img {
-
+/* FLAG ARTICLES BEGIN */
+    
+    .article-title-ctn {
+        height: 10em;
     }
 
     .flag-img {
         display: none;
     }
 
-    .article-5 {
+    .section-1 {
+        height: 150vh;
+    }
+
+    .article-1 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article-1 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        object-fit: cover;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    .article-1 p {
+        width: 90%;
+        margin: 0;
+        padding: 14em 3em 2em 3em;
+    }
+
+    .article-1-bottom-bg {
+        display: none;
+    }
+
+    .section-3 {
+        height: 180vh;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-3 .article-3 {
+        padding: 6em 2em 6em 2em;
+    }
+
+    .article-3 p {
+        text-align: left;
+    }
+
+    .section-4 {
+        height: 130vh;
+    }
+
+    .section-4 .article-4 p {
+        text-align: left;
+    }
+
+    .article-5, 
+    .article-5 .article-ctn {
+        flex-direction: column;
+    }
+
+    .section-5 .article {
+        padding: 0;
+        margin: 2em 0 2em 0;
+    }
+
+    .article-5 .article-ctn p {
+        padding: 0 2em 0 2em;
+    }
+
+    .section-5, .section-6 {
+        height: 105vh;
     }
 
     .left-mask,
@@ -684,9 +793,25 @@ footer .separator-lines {
         display: none;
     }
 
+    .section-6 {
+        height: 140vh;
+    }
+
     .article-6-bg-ctn {
         width: 100%;
         height: 100vh;
+    }
+
+    .section-7 {
+        height: 140vh;
+    }
+
+    .section-7 .article-7 p {
+        padding: 3em 2em 3em 2em;
+    }
+
+    .section-7 .article-7 img {
+        position: absolute;
     }
 
 }
